@@ -1,0 +1,129 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html
+{
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #e0f7fa;
+}
+
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to bottom,
+    #e0f7fa 0%,      /* Light sky blue */
+    #a2d4f5 40%,     /* Iceberg base, light blue */
+    #6faed9 100%);
+
+}
+
+.container
+{
+    padding: 10px 10%;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo
+{
+    width: 140px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: darkslategray;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+.header-text
+{
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+#intro
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#profile-img
+{
+    border-radius: 50%;
+}
+
+.into-text
+{
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 0px 120px;
+    font-size: 20px;
+
+}
+
+#iceBerg
+{
+    padding-top: 288px;
+}
+
+#sidemenu
+{
+
+}
+
+.content ul li
+{
+    list-style: none;
+
+}
+
+a
+{
+
+}
