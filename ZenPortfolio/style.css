@@ -99,7 +99,7 @@ nav ul li a:hover::after {
 }
 
 #profile-img {
-    width: 200px;
+    width: 290px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
