@@ -9,8 +9,6 @@
     <script src="https://kit.fontawesome.com/d32c2574fe.js" crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
 <div id="header">
 
@@ -20,11 +18,9 @@
             <ul id="sidemenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#content">Contact</a></li>
             </ul>
         </nav>
-
         <div class="header-text">
             <div id="intro">
                 <img src="Images/Zen-AirportE.png" id="profile-img">
@@ -39,18 +35,145 @@
                     <a href="https://www.linkedin.com/in/zen-al-din-hamam-04572120b/" target="_blank"> <i class="fa-brands fa-linkedin fa-beat"></i></a>
                     <a href="https://www.youtube.com/channel/UCAT2OdFSmG09gvOcixY1hIw" target="_blank"> <i class="fa-brands fa-youtube fa-beat"></i></a>
                 </div>
-
-
             </div>
             <img src="Images/IceBerg.png" id="iceBerg-img">
         </div>
     </div>
 </div>
 
-<dive id="about">
+<!---------- ABOUT ---------->
 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Zen-About.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
 
-</dive>
+                <p>
+                    Since the beginning of my career, I’ve focused on enhancing my skills and creativity through focused and powerful projects.<br>
+                    I take pride in the work I do, as well as the strong knowledge that I have gained.<br>
+                    I firmly believe in working hard, working together, and having fun along the way.<br>
+                    If you have any questions please don't hesitate to contact me.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')"> Hobbies</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>
+                            Self-taught before university and later formally trained, <br>I’ve developed a strong foundation in C++, C#, and Python, <br>with a focus on creating state machines and efficient game systems.
+                        </li>
+                        <li><span>Engines</span><br>
+                            Proficient in both Unity and Unreal Engine, <br>I’ve also built and customized my own simple game engine, <br>which improved my adaptability and understanding of how game engines operate under the hood.
+                        </li>
+                        <li><span>Web Development</span><br>
+                            Experienced in developing and maintaining websites like my portfolio<br> using modern web technologies and design principles.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bournemouth University</span><br>BSc in Game Software Engineering</li>
+                        <li><span>Richmond College</span><br>Academic foundation prior to university</li>
+                        <li><span>Udemy</span><br>Courses on UE5 multiplayer, Unity physics and many more </li>
+                        <li><span>Harvard CS50</span><br>Comprehensive computer science fundamentals</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Gym & Fitness</span><br>Maintaining physical health and mental discipline is very important to me,<br>it allows me to push my limits mentally and physically</li>
+                        <li><span>Programming</span><br>Passionate about prototyping and experimenting with new mechanics and systems</li>
+                        <li><span>Learning Languages</span><br>Fluent in English, Arabic, and Italian – continuously expanding communication skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="showcase">
+    <h1 class="title">Showcase</h1>
+    <div class="container">
+
+        <div class="row">
+            <div class="white-line"></div>
+            <div class="showcase-col-1">
+                <video width="720" height="540" controls>
+                    <source src="Videos/Aura.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="showcase-col-2">
+                <h1 class="project-title">Project Title</h1>
+                <p>
+                    here i talk about the project what i am doing how i did it what else i could do how i could do it and all that good juice stuff we all like and hove for and which for oh wait we need a title ma brother
+                </p>
+                <button class="project-button">Explore</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="white-line"></div>
+            <div class="showcase-col-1">
+                <video width="720" height="540" controls>
+                    <source src="Videos/KitchenCause.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="showcase-col-2">
+                <h1 class="project-title">Project Title</h1>
+                <p>
+                    here i talk about the project what i am doing how i did it what else i could do how i could do it and all that good juice stuff we all like and hove for and which for oh wait we need a title ma brother
+                </p>
+                <button class="project-button">Explore</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="white-line"></div>
+            <div class="showcase-col-1">
+                <video width="720" height="540" controls>
+                    <source src="Videos/TankGame.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="showcase-col-2">
+                <h1 class="project-title">Project Title</h1>
+                <p>
+                    here i talk about the project what i am doing how i did it what else i could do how i could do it and all that good juice stuff we all like and hove for and which for oh wait we need a title ma brother
+                </p>
+                <button class="project-button">Explore</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 
 </body>
 </html>
