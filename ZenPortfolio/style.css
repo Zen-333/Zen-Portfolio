@@ -4,14 +4,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    scroll-behavior: smooth;
 }
 
 body, html {
     height: 100%;
-    background: #e0f7fa;
+    background: #e0f7fa; /*   */
     color: #1b1b1b;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
+}
+
+#particles-js
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Send it to the background */
+    background-color: transparent;
+    pointer-events: none;
+
 }
 
 /* Header section */
@@ -22,12 +38,14 @@ body, html {
     background: linear-gradient(to bottom, #e0f7fa 0%, #a2d4f5 40%, #6faed9 100%);
     background-size: cover;
     background-position: center;
+    z-index: 1;
 }
 
 /* Container to limit width */
 .container {
     width: 90%;
     margin: 0 auto;
+
 }
 
 /* Navigation bar */
@@ -36,17 +54,20 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+
 }
 
 #logo {
     font-size: 28px;
     font-weight: 700;
     color: #004d40;
+
 }
 
 nav ul {
     display: flex;
     gap: 25px;
+
 }
 
 nav ul li {
@@ -145,6 +166,7 @@ a
 {
     background: linear-gradient(to bottom, #6faed9, #41729f);
     padding: 80px 0;
+    z-index: 1;
 }
 
 .row
@@ -238,6 +260,7 @@ a
 {
     background: linear-gradient(to bottom, #41729f, #1a3d5a);
     padding: 80px 0;
+    z-index: 1;
 }
 
 .title
