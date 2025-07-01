@@ -147,7 +147,7 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
-    color: blueviolet;
+    color: #7e57c2;
     align-items: center;
     justify-content: center;
     font-size: 30px;
@@ -213,6 +213,7 @@ a
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: white;
 }
 
 .tab-links:after
@@ -306,13 +307,13 @@ a
 
 .project-stats p
 {
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
 .project-stats i
 {
     font-size:  20px;
-    color: blueviolet;
+    color: #7e57c2;
     padding: 0px 6px;
 }
 
@@ -346,6 +347,12 @@ a
     width: 200px;
 }
 
+.project-description
+{
+    color: black;
+    text-align: left;
+}
+
 /*---------- contact ----------*/
 
 #contact
@@ -373,7 +380,7 @@ a
 
 .contact-left p i
 {
-    color: blueviolet;
+    color: #7e57c2;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -381,6 +388,7 @@ a
 .social-icons
 {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .social-icons a
@@ -396,7 +404,7 @@ a
 
 .social-icons a:hover
 {
-    color: blueviolet;
+    color: #7e57c2;
     transform: translateY(-5px);
 }
 
