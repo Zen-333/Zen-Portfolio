@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-family: "Cascadia Code", sans-serif;
     z-index: 1;
     scroll-behavior: smooth;
 }
@@ -15,6 +16,15 @@ body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 
+}
+
+
+.cascadia-code
+{
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
 }
 
 #particles-js
@@ -39,6 +49,7 @@ body, html {
     background-size: cover;
     background-position: center;
     z-index: 1;
+
 }
 
 /* Container to limit width */
@@ -140,6 +151,7 @@ nav ul li a:hover::after {
     width: 550px;
     opacity: 0.95;
 
+
 }
 
 .links i
@@ -160,13 +172,21 @@ a
     text-decoration: none;
 }
 
+.sub-text
+{
+    color: black;
+    text-align: left;
+}
+
 /*---------- about ----------*/
 
 #about
 {
     background: linear-gradient(to bottom, #6faed9, #41729f);
-    padding: 80px 0;
+    padding-bottom: 80px;
+    padding-top: 150px;
     z-index: 1;
+
 }
 
 .row
@@ -264,17 +284,16 @@ a
     z-index: 1;
 }
 
-.title
+#showcase .sub-title
 {
-    text-align:  center;
-    color: white;
-    font-size: 60px;
-    font-weight: 700;
+    text-align: center;
+    padding-bottom: 80px;
 }
 
 .showcase-col-1
 {
     flex-basis: 45%;
+    align-content: end;
 }
 
 .showcase-col-1 video
@@ -296,18 +315,18 @@ a
 {
     display: flex;
     background: rgba(255, 255, 255, 0.85);
-    padding: 30px;
+    padding: 30px 5px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
     width: 100%;
 
-
 }
 
 .project-stats p
 {
-    padding: 0px 10px;
+    padding: 0px 5px;
+
 }
 
 .project-stats i
@@ -347,18 +366,12 @@ a
     width: 200px;
 }
 
-.project-description
-{
-    color: black;
-    text-align: left;
-}
-
 /*---------- contact ----------*/
 
 #contact
 {
     background: linear-gradient(to bottom, #1a3d5a, #0b132b);
-    padding: 80px 0;
+    padding: 150px 0;
     z-index: 1;
 }
 
@@ -446,9 +459,17 @@ form .btn2
     cursor: pointer;
 }
 
-.sub-title
+/*---------- footer ----------*/
+
+#footer
 {
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
+    background: #004d40;
+    padding: 20px;
+}
+
+.footer-text
+{
+    text-align: center;
+    color: white;
+    font-size: 17px;
 }

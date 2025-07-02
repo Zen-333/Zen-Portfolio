@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- using HTML 5 for consistent behavior across browsers -->
-<html lang="en"> <!-- tells browsers and screen readers the language is English -->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!-- tells browsers and screen readers the language is English -->
 <head>
     <meta charset="UTF-8"> <!-- to show special characters correctly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d32c2574fe.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@350&family=Orbitron:wght@400..900&family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +19,7 @@
 <div id="header">
     <div class="container">
         <nav class="content">
-            <h1 id="logo">Zen</h1>
+            <h1 id="logo">ZEN</h1>
             <ul id="sidemenu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#showcase">Showcase</a></li>
@@ -54,7 +57,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
 
-                <p>
+                <p class="sub-text">
                     Since the beginning of my career, I’ve focused on enhancing my skills and creativity through focused and powerful projects.<br>
                     I take pride in the work I do, as well as the strong knowledge that I have gained.<br>
                     I firmly believe in working hard, working together, and having fun along the way.<br>
@@ -105,22 +108,20 @@
 <!---------- SHOWCASE ---------->
 
 <div id="showcase">
-    <h1 class="title">Showcase</h1>
+    <h1 class="sub-title">Showcase</h1>
     <div class="container">
-
         <div class="row">
-            <div class="white-line"></div>
             <div class="showcase-col-1">
                 <video width="720" height="540" controls>
                     <source src="Videos/Aura.mp4" type="video/mp4">
                 </video>
                 <div class="project-stats">
-                    <p><i class="fa-solid fa-code"></i> C++ & Blueprint</p> <p><i class="fa-solid fa-user"></i> 1 </p> <p><i class="fa-solid fa-gears"></i> Unreal Engine 5</p> <p><i class="fa-solid fa-clock"></i> 6 months</p> <p><i class="fa-solid fa-gamepad"></i> 3D RPG</p>
+                    <p><i class="fa-solid fa-code"></i> C++ </p> <p><i class="fa-solid fa-user"></i> 1 </p> <p><i class="fa-solid fa-gears"></i> Unreal Engine </p> <p><i class="fa-solid fa-clock"></i> 6 months</p> <p><i class="fa-solid fa-gamepad"></i> 3D RPG</p>
                 </div>
             </div>
             <div class="showcase-col-2">
                 <h1 class="project-title">Aura</h1>
-                <p class="project-description">
+                <p class="sub-text">
                     In this project, I developed a fully functional top-down RPG in Unreal Engine 5 using C++ and the Gameplay Ability System (GAS).<br><br>
                     I architected modular multiplayer-ready systems including combat, character abilities, AI behavior, XP progression, inventory management, and saving/loading mechanics, all following SOLID principles and clean, scalable code practices.<br><br>
                     I integrated both C++ and Blueprints to create an optimized, professional-grade gameplay experience, with custom UI, dynamic effects, and responsive input systems.<br><br>
@@ -142,7 +143,7 @@
             </div>
             <div class="showcase-col-2">
                 <h1 class="project-title">Rum Runner Revenge</h1>
-                <p class="project-description">
+                <p class="sub-text">
                     Collaborative effort within a team of 11 individuals.
 
                     I was responsible for enemy AI and
@@ -169,7 +170,7 @@
             </div>
             <div class="showcase-col-2">
                 <h1 class="project-title">Kitchen Chaos</h1>
-                <p class="project-description">
+                <p class="sub-text">
                     State machines for cooking.
 
                     Physics interaction (I did not use the build in rigidbody component I created my own).
@@ -203,7 +204,8 @@
                 <a href="Files/ZEN_Pro_CV.pdf" download class="btn btn2">Download my CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form action="https://formsubmit.co/zenhamam56@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Email From Portfolio">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
@@ -214,28 +216,13 @@
     </div>
 </div>
 
+<div id="footer">
+    <h1 class="footer-text"><i class="fa-regular fa-heart fa-beat"></i> MADE WITH PASSION BY ZEN <i class="fa-regular fa-heart fa-beat"></i></h1>
+</div>
+
 <script src="particles.js"></script>
 <script src="app.js"></script>
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname)
-    {
-        for(tablink of tablinks)
-        {
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents)
-        {
-            tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
