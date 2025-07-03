@@ -126,7 +126,7 @@
                     I integrated both C++ and Blueprints to create an optimized, professional-grade gameplay experience, with custom UI, dynamic effects, and responsive input systems.<br><br>
                     This project demonstrates my ability to build complex, networked gameplay features to AAA standards using Unreal Engine’s most powerful systems.
                 </p>
-                <button class="project-button">Explore</button>
+                <button class="project-button" onclick="openProject('Aura')">Explore</button>
             </div>
         </div>
 
@@ -153,7 +153,7 @@
 
                     I took on the challenge of creating a physics based bridge.
                 </p>
-                <button class="project-button">Explore</button>
+                <button class="project-button" onclick="openProject('RumRunner')">Explore</button>
             </div>
         </div>
 
@@ -180,7 +180,7 @@
 
                     Simple UI
                 </p>
-                <button class="project-button">Explore</button>
+                <button class="project-button" onclick="openProject('KitchenChaos')">Explore</button>
             </div>
         </div>
     </div>
@@ -217,6 +217,41 @@
 
 <div id="footer">
     <h1 class="footer-text"><i class="fa-regular fa-heart fa-beat"></i> MADE WITH PASSION BY ZEN <i class="fa-regular fa-heart fa-beat"></i></h1>
+</div>
+
+<div id="project-panel" class="hidden">
+    <div class="panel-content">
+        <button id="close-panel">&times;</button>
+        <h1 id="panel-title"></h1>
+        <div id="panel-video"></div>
+        <div class="row">
+            <div class="panel-col1">
+                <h2 class="panel-sub-title">About</h2>
+                <div id="panel-about">
+                </div>
+            </div>
+            <div class="panel-col2">
+                <h2 class="panel-sub-title">Stats</h2>
+                <div id="panel-stats">
+                </div>
+            </div>
+        </div>
+        <div class="panel-text-section">
+            <h2 class="panel-sub-title">Introduction</h2>
+            <p id="panel-paragraph-intro" class="panel-p"></p>
+        </div>
+
+        <div class="panel-text-section">
+            <h2 class="panel-sub-title">Introduction</h2>
+            <p id="panel-paragraph-interest" class="panel-p"></p>
+        </div>
+
+        <div class="panel-text-section">
+            <h2 class="panel-sub-title">Introduction</h2>
+            <p id="panel-paragraph-learn" class="panel-p"></p>
+        </div>
+
+    </div>
 </div>
 
 <script src="particles.js"></script>
