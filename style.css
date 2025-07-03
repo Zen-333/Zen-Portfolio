@@ -43,6 +43,7 @@ body, html {
 /* Header section */
 #header {
     width: 100%;
+    padding-top: 100px;
     height: 100vh;
     padding-bottom: 10px;
     background: linear-gradient(to bottom, #e0f7fa 0%, #a2d4f5 40%, #6faed9 100%);
@@ -59,6 +60,16 @@ body, html {
 
 }
 
+.content
+{
+    padding:20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* ensure it's above other elements */
+}
+
 /* Navigation bar */
 nav {
     display: flex;
@@ -72,6 +83,10 @@ nav {
     font-size: 28px;
     font-weight: 700;
     color: #004d40;
+    display: flex;
+    border-radius: 25%;
+    background-color: white;
+    padding: 15px;
 
 }
 
@@ -83,6 +98,10 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    display: flex;
+    border-radius: 25%;
+    background-color: white;
+    padding: 15px;
 }
 
 nav ul li a {
