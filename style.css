@@ -252,7 +252,12 @@ a
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: white;
+
+
+    color: #004d40;
+    border-radius: 25%;
+    background-color: white;
+    padding: 15px;
 }
 
 .tab-links:after
@@ -262,20 +267,21 @@ a
     height: 3px;
     background: #004d40;
     position: absolute;
-    left: 0;
-    bottom: -8px;
+    left: 15px;
+    bottom: 7px;
     transition: 0.5s;
 }
 
 .tab-links.active-link::after
 {
-    width: 50%;
+    width: 30%;
 }
 
 .tab-contents ul li
 {
     list-style: none;
     margin: 10px 0;
+
 }
 
 .tab-contents ul li span
@@ -574,6 +580,12 @@ form .btn2
     margin: 35px 0;
 }
 
+#panel-about
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
 .panel-sub-title
 {
     width: 100%;
@@ -585,6 +597,8 @@ form .btn2
 .panel-p
 {
     margin-top:  35px;
+    letter-spacing: 1px;
+    line-height:  25px;
 }
 
 
