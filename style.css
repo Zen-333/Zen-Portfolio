@@ -87,7 +87,9 @@ nav {
     border-radius: 25%;
     background-color: white;
     padding: 15px;
-
+    border-color: #004d40;
+    border-style: solid;
+    border-width: 2px;
 }
 
 nav ul {
@@ -102,6 +104,9 @@ nav ul li {
     border-radius: 25%;
     background-color: white;
     padding: 15px;
+    border-color: #004d40;
+    border-style: solid;
+    border-width: 2px;
 }
 
 nav ul li a {
@@ -336,6 +341,14 @@ a
     font-size: 24px;
 }
 
+.showcase-col-2 p
+{
+    display: flex;
+    border-radius: 15%;
+    padding:  60px;
+    background-color: white;
+}
+
 .project-stats
 {
     display: flex;
@@ -389,6 +402,7 @@ a
     margin-top:  50px;
     font-size: 17px;
     width: 200px;
+    cursor: pointer;
 }
 
 /*---------- contact ----------*/
