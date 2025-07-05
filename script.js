@@ -22,7 +22,7 @@ const projects = {
         description: `In this project, I developed a fully functional top-down RPG in Unreal Engine 5 using C++ and the Gameplay Ability System (GAS).
                     I architected modular multiplayer-ready systems including combat, character abilities, AI behavior, XP progression, inventory management, and saving/loading mechanics, all following SOLID principles and clean, scalable code practices.
                     I integrated both C++ and Blueprints to create an optimized, professional-grade gameplay experience, with custom UI, dynamic effects, and responsive input systems.
-                    This project demonstrates my ability to build complex, networked gameplay features to AAA standards using Unreal Engine’s most powerful systems.`,
+                    This project demonstrates my ability to build complex, networked gameplay features to AAA standards using Unreal Engine’s most powerful systems. <a href=\"https://github.com/Zen-333\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>`,
 
         interest: `GAS was implemented as the backbone of the combat and ability systems in my project. 
                     I created custom AbilitySystemComponent and AttributeSet classes in C++, allowing me to define core character stats like health, mana, and strength with full network replication. 
@@ -43,7 +43,7 @@ const projects = {
         about: 'Aura is a top-down RPG built in Unreal Engine 5 using C++ and the Gameplay Ability System (GAS). ' +
             'It features modular, scalable systems for combat, abilities, AI, and progression, reflecting professional-grade gameplay architecture.',
 
-        stats: ["C++", "1 Developer", "Unreal Engine", "6 Months", "3D RPG"]
+        stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unreal Engine", "<i class=\"fa-solid fa-clock\"></i> 6 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D RPG"]
     },
     RumRunner: {
         title: "Rum Runner Revenge",
@@ -51,12 +51,14 @@ const projects = {
         description: `Rum Runner’s Revenge was developed by a team of 11 passionate game developers as part of an academic capstone project. 
                 The game was nominated for the TIGER Game Award, a prestigious recognition at Bournemouth University that celebrates outstanding technical and creative achievement in student game development.
                 I was primarily responsible for designing and implementing the enemy AI using a custom state machine, enabling responsive and challenging combat behavior. Additionally, I created a physics-based collapsing bridge, adding dynamic environmental interaction, and developed an intuitive mini-map system to help guide players through the pirate-infested world.
-                The project showcased our ability to work as a cohesive team, applying professional pipelines and Unity best practices to deliver a polished, engaging 2D action RPG experience.`,
+                The project showcased our ability to work as a cohesive team, applying professional pipelines and Unity best practices to deliver a polished, engaging 2D action RPG experience.<br><br>
+                You can also download and play the game <a href="https://trojanhorse-studio.itch.io/rum-runners-revenge" target=\\"_blank\\">here</a>`,
 
         interest: `In Rum Runner’s Revenge, I implemented state machines to manage enemy AI behaviors such as patrol, chase, and attack. 
                 Each enemy transitions smoothly between states based on player proximity and other game events, allowing for responsive and dynamic interactions. 
                 The patrol state enables enemies to follow predefined routes, while the chase state activates when the player is detected, increasing engagement intensity. 
-                The attack state handles combat mechanics, including timing and hit detection. This structured approach made the AI predictable yet challenging, improving gameplay flow and player experience.`,
+                The attack state handles combat mechanics, including timing and hit detection. This structured approach made the AI predictable yet challenging, improving gameplay flow and player experience.<br><br>
+                Here is a link to the <a href="https://github.com/GameStudioProject/Rum-Runners-Revenge/tree/MAIN-BACKUP-DO-NOT-COMMIT-TO-THIS/Assets/_SCRIPTS/Enemy%20Scripts/Enemies/E3_Crab" target=\\\\"_blank\\\\">enemy scrips</a>`,
 
         interestTitle: "State Machines",
 
@@ -70,7 +72,7 @@ const projects = {
         about: 'Rum Runner’s Revenge is a 2D pixel-art, pirate-themed action RPG where players battle through challenging enemies in a dark, souls-like world. ' +
                 'Developed in Unity, the game combines retro visuals with stamina-based combat and immersive level design.',
 
-        stats: ["C#", "11 Developers", "Unity", "3 Months", "2D RPG"]
+        stats: ["<i class=\"fa-solid fa-code\"></i> C#", "<i class=\"fa-solid fa-user\"></i> 11 Developers", "<i class=\"fa-solid fa-gears\"></i> Unity", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> 2D RPG"]
     },
     KitchenChaos: {
         title: "Kitchen Chaos",
@@ -98,7 +100,7 @@ const projects = {
         about: 'Kitchen Chaos is a fast-paced cooking game where players manage recipes, time, and kitchen physics to serve meals efficiently. ' +
             'Built in Unity with custom systems for cooking, interaction, and game flow.',
 
-        stats: ["C#", "1 Developer", "Unity", "3 Months", "3D Arcade"]
+        stats: ["<i class=\"fa-solid fa-code\"></i> C#", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unity", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D Arcade"]
     }
 };
 
@@ -107,8 +109,8 @@ function openProject(projectKey) {
     const data = projects[projectKey];
 
     document.getElementById("panel-title").textContent = data.title;
-    document.getElementById("panel-paragraph-intro").textContent = data.description;
-    document.getElementById("panel-paragraph-interest").textContent = data.interest;
+    document.getElementById("panel-paragraph-intro").innerHTML = data.description;
+    document.getElementById("panel-paragraph-interest").innerHTML = data.interest;
     document.getElementById("panel-paragraph-learn").textContent = data.learn;
     document.getElementById("panel-title-interest").textContent = data.interestTitle;
     document.getElementById("panel-about").textContent = data.about;
@@ -119,7 +121,7 @@ function openProject(projectKey) {
   `;
 
     const statsHTML = data.stats
-        .map(stat => `<p><i class="fa-solid fa-circle-info"></i> ${stat}</p>`)
+        .map(stat => `<p>${stat}</p>`)
         .join("<br>");
     document.getElementById("panel-stats").innerHTML = statsHTML;
 
