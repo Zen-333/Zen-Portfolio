@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     font-family: "Cascadia Code", sans-serif;
     z-index: 1;
     scroll-behavior: smooth;
@@ -317,7 +316,7 @@ a
 #showcase .sub-title
 {
     text-align: center;
-    padding-bottom: 80px;
+    padding: 20px 0;
 }
 
 .showcase-col-1
@@ -615,7 +614,11 @@ form .btn2
     line-height:  25px;
 }
 
-
+.img-project
+{
+    height: 550px;
+    border-radius: 15px;
+}
 
 /*---------- #panel-stats {
     margin-top: 20px;
