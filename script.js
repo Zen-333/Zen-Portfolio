@@ -46,6 +46,36 @@ const projects = {
 
         stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unreal Engine", "<i class=\"fa-solid fa-clock\"></i> 6 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D RPG"]
     },
+    GraphicsSimulation: {
+        title: "Graphics Simulation",
+        description: `This project is a real time 3D graphics simulation built using OpenGL and C++. 
+        It showcases three different shading models: Fragmented Physically Based Rendering (FPBR), Simplified Physically Based Rendering (SPBR), and classic Phong shading. 
+        The scene features a rotating cube rendered with FPBR for high visual fidelity, an orbiting SPBR lit cube acting as a dynamic light source, and a floor shaded with Phong for contrast. 
+        The project explores the balance between rendering realism and performance, demonstrating advanced lighting techniques and shader programming.`,
+
+        interest: `In this project, I implemented a custom shader management and physically based rendering (PBR) system in C++ using OpenGL. 
+        At the core lies a Shader class that encapsulates program compilation, linking, and uniform setting, supporting modular and reusable shader logic. 
+        I developed multiple shading models Phong, Forward PBR (FPBR), and Specular PBR (SPBR) allowing the scene to dynamically switch between classic and advanced rendering techniques. 
+        Each model uses a shared infrastructure for loading and managing shaders, sending transformation matrices, camera positions, lighting data, and material properties to the GPU. 
+        The SPBR implementation further supports anisotropic roughness via directional roughness control (roughnessX, roughnessY). 
+        I optimized draw performance by tracking GPU timings using std::chrono, logging load and render durations for real time performance analysis. 
+        The system also supports large scale instanced rendering of up to 10,000 cubes, demonstrating efficient matrix transformations and batch rendering. 
+        Overall, this rendering engine showcases a robust, extensible graphics pipeline suitable for real time rendering and game development.<br><br>
+        <img src="Images/Projects/OpenGL_loadShader.png" class="openGL-img"> <img src="Images/Projects/OpenGL_SceneSetup.png" class="openGL-img">`,
+
+        interestTitle: "Shader Development & Physically Based Rendering",
+
+        learn: `Through this project, I gained hands on experience with modern OpenGL and real time rendering techniques. 
+        I deepened my understanding of shader programming, lighting models, and the graphics pipeline. Implementing FPBR and SPBR taught me how to balance visual fidelity with performance, while working with transformations and camera controls improved my grasp of 3D mathematics and scene management. 
+        This project strengthened my ability to write low level graphics code and debug complex rendering behaviors.`,
+
+        video: "Videos/Render.mp4",
+
+        about: 'A real time 3D simulation built with OpenGL and C++, featuring FPBR, SPBR, and Phong shading. A rotating FPBR cube, an SPBR lit orbiting light source, and a Phong shaded floor demonstrate a balance between realism and performance using advanced shading techniques.',
+
+        stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> OpenGL", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> Shading Models"]
+    },
+
     RumRunner: {
         title: "Rum Runner Revenge",
 
