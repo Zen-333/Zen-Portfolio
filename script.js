@@ -134,6 +134,39 @@ const projects = {
             'Built in Unity with custom systems for cooking, interaction, and game flow.',
 
         stats: ["<i class=\"fa-solid fa-code\"></i> C#", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unity", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D Arcade"]
+    },
+
+    CurrentProject: {
+        title: "Dungeon Slayer",
+        description: `Dungeon Slayer is a wave based Action RPG built in Unreal Engine 5, utilizing the Gameplay Ability System (GAS) from the ground up. 
+        Set in a medieval dungeon, players fight through waves of enemies using a sword, bow, and shield. 
+        The game is developed using C++ with Blueprint integration, and Rider is used as the primary IDE. 
+        Core systems include modular combat abilities, enemy wave management, and input driven weapon switching. 
+        The project is planned for release on Steam, and a YouTube devlog series is in the works to document the full development journey.`,
+
+        interest: ` I implemented a flexible input system using Unreal Engine 5's Enhanced Input framework integrated with the Gameplay Ability System (GAS). 
+        Inputs are defined through a custom UDungeonInputConfig data asset, which maps input actions to gameplay tags. 
+        These mappings are bound dynamically at runtime using a custom UDungeonEnhancedInputComponent, which handles input events like Pressed, Released, and Held.<br><br>
+        This setup allows for clean separation of input logic and gameplay behavior, making the system modular and easy to extend.
+        When an input event is triggered, the corresponding gameplay tag is passed to the UDungeonAbilitySystemComponent. 
+        This component filters available abilities based on the current weapon or shield and checks for tag matches using the ability's dynamic source tags.<br><br>
+        If a match is found, the ability is activated and replicated appropriately. 
+        This tag driven approach enables context aware input handling and supports designer driven workflows, reducing coupling and improving scalability for future content.<br><br>
+        <img src="Images/Projects/Current_EIC.png" class="openGL-img"> <img src="Images/Projects/Current_GASI.png" class="openGL-img">`,
+
+        interestTitle: "Inputs & Ability binding",
+
+        learn: `While developing Dungeon Slayer, I am continuously learning new skills from animation setup to building the equipment and damage systems using Unreal Engine 5 and GAS(Game play ability system). 
+        Each part helped me better understand gameplay programming and engine features.
+        I also focused on writing clean, efficient, and modular C++ code, balancing performance with readability. 
+        This project has strengthened my ability to create scalable systems and maintain good coding practices.`,
+
+        video: "Videos/Kitchen.mp4",
+
+        about: 'Dungeon Slayer is a wave based medieval action game built in Unreal Engine 5 using the Gameplay Ability System.' +
+        'Players explore a dark dungeon, battling enemy waves with a sword, bow, and shield. Developed with C++ and Blueprints, the game offers dynamic combat and a scalable, modular design.',
+
+        stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unreal Engine 5", "<i class=\"fa-solid fa-clock\"></i> Current", "<i class=\"fa-solid fa-gamepad\"></i> Action RPG "]
     }
 };
 
