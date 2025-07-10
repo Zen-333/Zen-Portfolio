@@ -161,7 +161,7 @@ const projects = {
         I also focused on writing clean, efficient, and modular C++ code, balancing performance with readability. 
         This project has strengthened my ability to create scalable systems and maintain good coding practices.`,
 
-        video: "Videos/Kitchen.mp4",
+        video: "Videos/DungeonSlayer.mp4",
 
         about: 'Dungeon Slayer is a wave based medieval action game built in Unreal Engine 5 using the Gameplay Ability System.' +
         'Players explore a dark dungeon, battling enemy waves with a sword, bow, and shield. Developed with C++ and Blueprints, the game offers dynamic combat and a scalable, modular design.',
