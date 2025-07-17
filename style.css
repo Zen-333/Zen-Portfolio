@@ -43,8 +43,7 @@ body, html {
 #header {
     width: 100%;
     padding-top: 100px;
-    /* height: 100vh;*/
-    min-height: 100vh;
+    height: 100vh;
 
     padding-bottom: 10px;
     background: linear-gradient(to bottom, #e0f7fa 0%, #a2d4f5 40%, #6faed9 100%);
@@ -54,10 +53,6 @@ body, html {
 
 }
 
-#about, #showcase, #contact
-{
-    scroll-margin-top: 100px;
-}
 
 /* Container to limit width */
 .container {
@@ -69,8 +64,7 @@ body, html {
 .content
 {
     padding:20px 50px;
-    position: relative;
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
