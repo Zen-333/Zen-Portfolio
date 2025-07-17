@@ -695,6 +695,11 @@ nav .fas
         padding: 0 10px;
     }
 
+    #sidemenu
+    {
+        pointer-events: auto;
+    }
+
     nav .fas
     {
         display: block;
