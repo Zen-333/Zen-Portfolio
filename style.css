@@ -54,6 +54,11 @@ body, html {
 
 }
 
+#about, #showcase, #contact
+{
+    scroll-margin-top: 100px;
+}
+
 /* Container to limit width */
 .container {
     width: 90%;
