@@ -666,7 +666,6 @@ form .btn2
     transition: 0.2s;
 }
 
-
 /*---------- footer ----------*/
 
 #footer
@@ -680,4 +679,94 @@ form .btn2
     text-align: center;
     color: white;
     font-size: 17px;
+}
+
+/*---------- phone ----------*/
+
+@media only screen and (max-width: 768px) {
+
+    .header-text {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #iceBerg-img {
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1,
+    .about-col-2,
+    .showcase-col-1,
+    .showcase-col-2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    .showcase-col-2 p,
+    .project-button,
+    .current-project-button {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .sub-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-links {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .project-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-col1,
+    .panel-col2 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #project-panel {
+        padding: 20px;
+    }
+
+    .btn.btn2 {
+        width: 100%;
+    }
 }
