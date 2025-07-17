@@ -683,16 +683,97 @@ form .btn2
 
 /*---------- phone ----------*/
 
+nav .fas
+{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
+    /* General layout */
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    nav .fas
+    {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+
+    #openmenu
+    {
+        color: #004d40;
+        display: flex;
+        border-radius: 25%;
+        background-color: white;
+        padding: 15px;
+        border-color: #004d40;
+        border-style: solid;
+        border-width: 2px;
+        font-size: 18px;
+    }
+
+    nav ul
+    {
+        background: #6faed9;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        width:200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li
+    {
+        display: block;
+        margin: 10px 25px;
+    }
+
+    nav ul .fas
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    #logo
+    {
+        width: 65px;
+        font-size: 18px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 
     .header-text {
         flex-direction: column;
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     #intro {
         flex-direction: column;
+        gap: 20px;
+        padding: 20px;
         text-align: center;
+    }
+
+    .into-text {
+        text-align: center;
+        font-size: 15px;
     }
 
     #profile-img {
@@ -701,72 +782,109 @@ form .btn2
     }
 
     #iceBerg-img {
-        width: 300px;
+        width: 100%;
         height: auto;
-        margin-top: 20px;
     }
 
+    /* Social media links — now horizontal */
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .links i {
+        font-size: 28px;
+    }
+
+    /* About section: stack columns vertically */
     .row {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-col-1,
-    .about-col-2,
-    .showcase-col-1,
-    .showcase-col-2,
-    .contact-left,
-    .contact-right {
+    .about-col-2 {
         flex-basis: 100%;
+        width: 100%;
     }
 
-    .showcase-col-2 p,
-    .project-button,
-    .current-project-button {
-        padding: 20px;
-        margin: 20px auto;
-        width: 90%;
-    }
-
-    .sub-title {
-        font-size: 40px;
-        text-align: center;
-    }
-
+    /* Tabs (Skills / Education / Hobbies) horizontal */
     .tab-titles {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 20px 0 30px;
     }
 
     .tab-links {
-        margin: 10px 0;
+        min-width: 100px;
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Showcase columns stacked */
+    .showcase-col-1,
+    .showcase-col-2 {
+        flex-basis: 100%;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
+    .showcase-col-2 p {
+        padding: 20px;
+        font-size: 18px;
     }
 
-    nav ul li {
-        padding: 10px;
+    .project-title {
+        font-size: 24px;
+        padding: 40px 0;
     }
 
-    .project-stats {
-        flex-direction: column;
-        align-items: center;
+    .project-button,
+    .current-project-button {
+        width: 80%;
+        font-size: 16px;
+        padding: 15px;
     }
 
-    .panel-col1,
-    .panel-col2 {
+    /* Contact section stacked */
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
-        margin-bottom: 20px;
+        width: 100%;
     }
 
+    .contact-left {
+        text-align: center;
+    }
+
+    .btn.btn2 {
+        width: 80%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* Project panel */
     #project-panel {
         padding: 20px;
     }
 
-    .btn.btn2 {
+    .panel-sub-title {
+        font-size: 22px;
+    }
+
+    .panel-p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .img-project,
+    .openGL-img {
         width: 100%;
+        height: auto;
     }
 }
+

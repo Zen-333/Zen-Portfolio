@@ -1,5 +1,6 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+var sidemenu = document.getElementById("sidemenu");
 
 function opentab(tabname)
 {
@@ -15,6 +16,17 @@ function opentab(tabname)
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+function openMenu()
+{
+    sidemenu.style.right = "0";
+}
+
+function closeMenu()
+{
+    sidemenu.style.right = "-200px";
+}
+
 
 const projects = {
     Aura: {
@@ -197,3 +209,4 @@ function openProject(projectKey) {
 document.getElementById("close-panel").addEventListener("click", () => {
     document.getElementById("project-panel").classList.remove("active");
 });
+
