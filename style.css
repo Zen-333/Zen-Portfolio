@@ -175,8 +175,6 @@ nav ul li a:hover::after {
     height: 550px;
     width: 550px;
     opacity: 0.95;
-
-
 }
 
 .links i
@@ -305,6 +303,33 @@ a
 .tab-contents.active-tab
 {
     display: block;
+}
+
+/*---------- founders & coders ----------*/
+
+#fc-section {
+
+    padding: 80px 0;
+}
+
+#fc-section .sub-title {
+    text-align: center; /* Center the heading */
+    margin-bottom: 40px;
+}
+
+.fc {
+
+    padding: 0;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.fc-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ffffff; /* Use your site's text color */
+    letter-spacing: 0.5px;
 }
 
 /*---------- showcase ----------*/
