@@ -17,6 +17,8 @@ function opentab(tabname)
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+// test
+
 function openMenu()
 {
     sidemenu.style.right = "0";
