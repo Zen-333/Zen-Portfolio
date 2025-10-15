@@ -26,6 +26,15 @@ body, html {
     font-style: normal;
 }
 
+a:visited{
+    text-decoration: none;
+}
+
+#text-link
+{
+    color: white;
+}
+
 #particles-js
 {
     position: fixed;
@@ -241,7 +250,7 @@ a
     font-size: 60px;
     font-weight: 600;
     color: #fff;
-    text-shadow: -2px -2px 0 #004d40, 2px -2px 0 #004d40, -2px 2px 0 #004d40, 2px 2px 0 #004d40;
+   // text-shadow: -2px -2px 0 #004d40, 2px -2px 0 #004d40, -2px 2px 0 #004d40, 2px 2px 0 #004d40;
 }
 
 .tab-titles
