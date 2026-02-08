@@ -2,6 +2,8 @@
 
 A personal portfolio website showcasing my game development projects and programming skills.
 
+live link: https://zenportfolio.netlify.app/
+
 ## About
 
 This is my professional portfolio featuring:
