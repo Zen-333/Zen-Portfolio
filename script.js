@@ -31,35 +31,6 @@ function closeMenu()
 
 
 const projects = {
-    Aura: {
-        title: "Aura",
-        description: `In this project, I developed a fully functional top down RPG in Unreal Engine 5 using C++ and the Gameplay Ability System (GAS).
-                    I architected modular multiplayer ready systems including combat, character abilities, AI behavior, XP progression, inventory management, and saving/loading mechanics, all following SOLID principles and clean, scalable code practices.<br><br>
-                    I integrated both C++ and Blueprints to create an optimized, professional gameplay experience, with custom UI, dynamic effects, and responsive input systems.
-                    This project demonstrates my ability to build complex, networked gameplay features to AAA standards using Unreal Engine’s most powerful systems.<br><br> 
-                    Here is a link to the<a href=\"https://github.com/Zen-333/Git_UE_AuraProject/tree/main/Source/Aura/Public" target=\"_blank\"> Aura Project</a>`,
-
-        interest: `GAS was implemented as the backbone of the combat and ability systems in my project. 
-                    I created custom AbilitySystemComponent and AttributeSet classes in C++, allowing me to define core character stats like health, mana, and strength with full network replication. 
-                    Abilities were built as modular, data driven assets that triggered gameplay effects and animations through both C++ and Blueprints.<br><br> 
-                    I implemented gameplay tags for state management (e.g., stunned, casting) and used attribute modifiers, effect durations, cooldowns, and costs to balance gameplay. 
-                    The system was designed with scalability in mind new abilities could be added with minimal code, and all logic remained consistent across singleplayer and multiplayer sessions thanks to proper replication and prediction handling. 
-                    GAS gave me the foundation to create a professional MMO style ability systems with high responsiveness and flexibility<br><br> <img src="Images/Projects/Aura_AbilityGiven.png" class="img-project"> `,
-
-        interestTitle: "GAS Implementation",
-
-        learn: `Through this project, I gained in depth experience with Unreal Engine 5’s Gameplay Ability System (GAS), learning how to build modular, scalable, and network ready gameplay mechanics using C++. 
-                    I implemented abilities, attributes, effects, and replication logic from scratch all within the GAS framework.<br><br> 
-                    This strengthened my understanding of Unreal's architecture and taught me how to design gameplay systems that are clean, data driven, and multiplayer compatible. 
-                    I also learned how to integrate GAS with animation, UI, and Blueprint scripting, giving me full control over creating complex abilities with professional level performance and flexibility.`,
-
-        video: "Videos/Aura.mp4",
-
-        about: 'Aura is a top down RPG built in Unreal Engine 5 using C++ and the Gameplay Ability System (GAS). ' +
-            'It features modular, scalable systems for combat, abilities, AI, and progression, reflecting professional grade gameplay architecture.',
-
-        stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unreal Engine", "<i class=\"fa-solid fa-clock\"></i> 6 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D RPG"]
-    },
     GraphicsSimulation: {
         title: "Graphics Simulation",
         description: `This project is a real time 3D graphics simulation built using OpenGL and C++. 
