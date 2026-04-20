@@ -31,34 +31,36 @@ function closeMenu()
 
 
 const projects = {
-    GraphicsSimulation: {
-        title: "Graphics Simulation",
-        description: `This project is a real time 3D graphics simulation built using OpenGL and C++. 
-        It showcases three different shading models: Fragmented Physically Based Rendering (FPBR), Simplified Physically Based Rendering (SPBR), and classic Phong shading.<br><br> 
-        The scene features a rotating cube rendered with FPBR for high visual fidelity, an orbiting SPBR lit cube acting as a dynamic light source, and a floor shaded with Phong for contrast. 
-        The project explores the balance between rendering realism and performance, demonstrating advanced lighting techniques and shader programming.`,
+    ArcadeEngine: {
+        title: "2D Arcade Game Engine",
 
-        interest: `In this project, I implemented a custom shader management and physically based rendering (PBR) system in C++ using OpenGL. 
-        At the core lies a Shader class that encapsulates program compilation, linking, and uniform setting, supporting modular and reusable shader logic.<br><br> 
-        I developed multiple shading models Phong, Forward PBR (FPBR), and Specular PBR (SPBR) allowing the scene to dynamically switch between classic and advanced rendering techniques. 
-        Each model uses a shared infrastructure for loading and managing shaders, sending transformation matrices, camera positions, lighting data, and material properties to the GPU.<br><br> 
-        The SPBR implementation further supports anisotropic roughness via directional roughness control (roughnessX, roughnessY). 
-        I optimized draw performance by tracking GPU timings using std::chrono, logging load and render durations for real time performance analysis. 
-        The system also supports large scale instanced rendering of up to 10,000 cubes, demonstrating efficient matrix transformations and batch rendering. 
-        Overall, this rendering engine showcases a robust, extensible graphics pipeline suitable for real time rendering and game development.<br><br>
-        <img src="Images/Projects/OpenGL_loadShader.png" class="openGL-img"> <img src="Images/Projects/OpenGL_SceneSetup.png" class="openGL-img">`,
+        description: `The 2D Arcade Game Engine is a custom game engine and game collection built entirely in C++ using SDL2, developed from scratch without relying on any existing engine framework.
+        The engine includes a full rendering pipeline built on a custom ScreenBuffer with per-pixel alpha blending, a modular shape library covering rectangles, circles, lines, triangles, and stars, and a complete input system driven by an event-based GameController architecture.<br><br>
+        Currently shipping two fully playable games: Breakout, featuring multi-level loading from a custom file format, physics-based ball and paddle collision, and a high score system — and Tetris, featuring all 7 tetrominoes with full rotation logic, a ghost piece, DAS (Delayed Auto Shift) input handling, and recursive line clearing.<br><br>
+        The project was built with the explicit goal of understanding how game engines work at a fundamental level — every system that a commercial engine provides for free, this engine implements manually.`,
 
-        interestTitle: "Shader Development & Physically Based Rendering",
+        interest: `The most technically significant system in the engine is the shape dispatch architecture inside <code>TetrisShapes</code>. Rather than using a switch statement or virtual functions to construct each tetromino, I implemented a static <code>unordered_map</code> keyed by enum that stores member function pointers — <code>void (TetrisShapes::*)()</code> — which are resolved and called at runtime.<br><br>
+        This means adding a new shape requires only defining its construction function and registering it in the map. No conditional branching, no changes to existing code. The pattern is closed for modification and open for extension, a direct application of the Open/Closed Principle using advanced C++ type system features most junior developers never encounter.<br><br>
+        The second major system is the <code>Excluder</code> class, which underpins all collision detection in the engine. Excluder stores four pre-computed boundary edges with outward normals, and uses axis-aligned intersection math to determine both which edge was hit and the magnitude of penetration. Both the Breakout blocks and the Tetris boundary inherit from Excluder, meaning the same collision logic handles fundamentally different gameplay contexts without modification.<br><br>
+        <img src="Images/Projects/ArcadeEngine_ShapeMap.png" class="openGL-img">`,
 
-        learn: `Through this project, I gained hands on experience with modern OpenGL and real time rendering techniques. 
-        I deepened my understanding of shader programming, lighting models, and the graphics pipeline. Implementing FPBR and SPBR taught me how to balance visual fidelity with performance, while working with transformations and camera controls improved my grasp of 3D mathematics and scene management. 
-        This project strengthened my ability to write low level graphics code and debug complex rendering behaviors.`,
+        interestTitle: "Pointer Dispatch & Collision Architecture",
 
-        video: "Videos/Render.mp4",
+        learn: `Building this engine from scratch gave me a genuinely different perspective on game development. Every feature I now take for granted in Unreal or Unity — input routing, frame timing, pixel rendering, collision normals — I had to implement and debug myself.<br><br>
+        The most important lesson was the cost of architectural decisions made early. The <code>Excluder</code> collision system only works cleanly because I designed it to be inherited from the start. Had I written collision directly into the Ball or Block classes, sharing it across the engine would have required a rewrite.<br><br>
+        Working at the pixel level through the <code>ScreenBuffer</code> and implementing per-pixel alpha blending using the one-minus-source-alpha formula also gave me a concrete understanding of how transparency compositing actually works — something I previously only understood abstractly.`,
 
-        about: 'A real time 3D simulation built with OpenGL and C++, featuring FPBR, SPBR, and Phong shading. A rotating FPBR cube, an SPBR lit orbiting light source, and a Phong shaded floor demonstrate a balance between realism and performance using advanced shading techniques.',
+        video: "Videos/ArcadeEngine.mp4",
 
-        stats: ["<i class=\"fa-solid fa-code\"></i> C++", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> OpenGL", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> Shading Models"]
+        about: `A custom 2D game engine and game collection built in C++ and SDL2 from scratch, featuring a pixel-level rendering pipeline, modular collision architecture, and two fully playable games — Breakout and Tetris — each with complete game loops, scoring, and level systems.`,
+
+        stats: [
+            "<i class=\"fa-solid fa-code\"></i> C++",
+            "<i class=\"fa-solid fa-user\"></i> 1 Developer",
+            "<i class=\"fa-solid fa-gears\"></i> SDL2",
+            "<i class=\"fa-solid fa-clock\"></i> Sept 2025 - Ongoing",
+            "<i class=\"fa-solid fa-gamepad\"></i> Custom Engine"
+        ]
     },
 
     RumRunner: {
