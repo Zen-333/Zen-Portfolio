@@ -208,6 +208,26 @@ a
 {
     color: black;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.private-badge{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding-top:  30px;
+}
+
+.github-btn{
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    color: #7e57c2;
+}
+
+.github-btn:visited {
+    text-decoration: none;
 }
 
 /*---------- about ----------*/
