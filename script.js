@@ -93,36 +93,6 @@ const projects = {
 
         stats: ["<i class=\"fa-solid fa-code\"></i> C#", "<i class=\"fa-solid fa-user\"></i> 11 Developers", "<i class=\"fa-solid fa-gears\"></i> Unity", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> 2D RPG"]
     },
-    KitchenChaos: {
-        title: "Kitchen Chaos",
-        description: `This project is a fast paced cooking game developed in Unity, inspired by the "Overcooked" style gameplay. 
-                    The goal was to create a complete, polished game loop from scratch within a short timeframe, focusing on clean architecture and gameplay systems. 
-                    I implemented core features such as object interactions, customer orders, recipe management, and a responsive UI all structured with clear separation of responsibilities.<br><br> 
-                    This project served as a deep dive into Unity’s event driven programming, ScriptableObjects for data driven design, and scene organization for rapid iteration. 
-                    It was an excellent opportunity to apply professional level game structure principles while delivering a playable and visually appealing prototype.`,
-
-        interest: `The character system in the game is built around smooth, responsive controls that allow the player to navigate the kitchen efficiently and interact with various objects. 
-                    I implemented a modular interaction system where the player can pick up, drop, combine, and process ingredients based on context sensitive actions.<br><br> 
-                    Each interactable object such as counters, plates, chopping boards, and cooking stations is designed with its own logic, but all share a unified interface to simplify player interaction. 
-                    The system uses raycasting and input driven events to detect nearby interactables, ensuring intuitive behavior and minimal player friction. 
-                    These mechanics are central to the gameplay loop, reinforcing time management, coordination, and spatial awareness in a dynamic kitchen environment.<br><br>
-                    <img src="Images/Projects/Kitchen_Movement.png" class="img-project"> `,
-
-        interestTitle: "Character Interactions",
-
-        learn: `Through this project, I gained a deeper understanding of clean code architecture and how to structure a scalable gameplay loop around core mechanics. 
-        I learned how to manage game state, handle player input efficiently, and create modular systems that can be easily extended or reused.<br><br> 
-        Implementing systems like timed cooking, ingredient processing, and recipe validation helped me strengthen my grasp of event driven programming and interface based design. 
-        I also gained hands on experience with Unity’s physics and animation systems, and refined my ability to write maintainable code while managing interactions between multiple game objects in a fast paced environment.`,
-
-        video: "Videos/Kitchen.mp4",
-
-        about: 'Kitchen Chaos is a fast paced cooking game where players manage recipes, time, and kitchen physics to serve meals efficiently. ' +
-            'Built in Unity with custom systems for cooking, interaction, and game flow.',
-
-        stats: ["<i class=\"fa-solid fa-code\"></i> C#", "<i class=\"fa-solid fa-user\"></i> 1 Developer", "<i class=\"fa-solid fa-gears\"></i> Unity", "<i class=\"fa-solid fa-clock\"></i> 3 Months", "<i class=\"fa-solid fa-gamepad\"></i> 3D Arcade"]
-    },
-
     CurrentProject: {
         title: "Dungeon Slayer",
         description: `Dungeon Slayer is a wave based Action RPG built in Unreal Engine 5, utilizing the Gameplay Ability System (GAS) from the ground up. 
